@@ -23,6 +23,8 @@ mkdir $TMP_MOUNT_PATH
 mount -t vfat -o loop $TMP_FLOPPY_IMAGE $TMP_MOUNT_PATH
 cp $CONTENT_SRC $TMP_MOUNT_PATH
 
+sleep 3
+
 umount $TMP_MOUNT_PATH
 rmdir $TMP_MOUNT_PATH
 
